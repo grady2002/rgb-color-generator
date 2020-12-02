@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <title>RGB Preview</title>
 </head>
 <body>
     <div class="container">
         <section class="top__section">
             <h2 class="main__header">
-                rgb color preview :
+                color preview :
             </h2>
         </section>
         <section class="color__display">
@@ -19,16 +21,17 @@
         <br><br>
         <section class="output__property">
             <label for="output property">html hex : </label>
-            <span class="css__property" id="commandOutput">input rgb values first !</span>
+            <span class="css__property" id="commandOutput">input rgb values</span>
         </section>
         <br><br>
         <section class="input__part">
-            <label for="input 1">red Component :</label><input type="text" id="redComponent">
-            <label for="input 2">green Component :</label><input type="text" id="greenComponent">
-            <label for="input 3">blue Component :</label><input type="text" id="blueComponent">
-            <button onclick="generateColor()">Generate</button>
-            <br>
-            <button onclick="clearColor()">Clear</button>
+            <label for="input 1" class="red">red Component :</label><input type="text" id="redComponent" placeholder="0 - 255 integer">
+            <label for="input 2" class="green">green Component :</label><input type="text" id="greenComponent" placeholder="0 - 255 integer">
+            <label for="input 3" class="blue">blue Component :</label><input type="text" id="blueComponent" placeholder="0 - 255 integer">
+            <section class="flex__container">
+                <button onclick="generateColor()">Generate</button>
+                <button onclick="clearColor()">Clear</button>
+            </section>
         </section>
     </div>
     <!--js-->

@@ -1,7 +1,7 @@
 :root {
-    --body-bg: #ffffff;
+    --body-bg: #F2F1EF;
     --shadow: 0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.30);
-    --primary-font: 'Roboto', sans-serif;
+    --primary-font: 'Ubuntu', sans-serif;
     --primary-font-color: #333333;
     --border-color: #333333;
 }
@@ -19,6 +19,7 @@ body {
     color: var(--primary-font-color);
     font-size: 1em;
     transition: 1s;
+    letter-spacing: 2px;
 }
 
 .main__header {
@@ -43,6 +44,7 @@ body {
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
+    margin-left: -5px;
 }
 
 .css__property:hover {
@@ -62,6 +64,18 @@ label {
     font-weight: bold;
 }
 
+.red, #redComponent {
+    color: red;
+}
+
+.green, #greenComponent {
+    color: green;
+}
+
+.blue, #blueComponent {
+    color: blue;
+}
+
 input {
     border: none;
     border-bottom: 1px solid var(--border-color);
@@ -76,6 +90,12 @@ input {
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-transform: lowercase;
+    font-size: 1em;
+}
+
+.flex__container {
+    display: flex;
 }
 
 button {

@@ -11,8 +11,10 @@ function generateColor() {
     else {
         var finalHex = rgbToHex(redComponent, greenComponent, blueComponent)
         commandOutput.innerHTML = finalHex
+        commandOutput.style.color = finalHex
         colorScreen.style.backgroundColor = finalHex
         colorScreen.style.boxShadow = "0 20px 40px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.30)"
+        colorScreen.style.border = "none"
     }
 }
 
